@@ -184,9 +184,7 @@ def conv3d(
                 kmap["coords"],
                 kmap.get("spatial_range"),
             )
-            print(f"{input._caches.cmaps=}")
-            print(f"{input._caches.cmaps.keys()=}")
-            print(f"{input=}")
+            
             output = SparseTensor(
                 coords=input._caches.cmaps[tensor_stride][0],
                 feats=feats,
